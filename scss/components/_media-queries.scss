@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@include min-width($breakpoint-desktop) {
 
     .container {
       max-width: 1400px;

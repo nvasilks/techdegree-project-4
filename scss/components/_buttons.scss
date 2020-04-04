@@ -1,29 +1,45 @@
 .btn {
     margin-top: 15px;
     width: 100%;
-    color: #fff;
+    color: $white;
     border: none;
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
+    transition: 0.3s;
   }
   
   .default {
-    background-color: #51ddfc;
+    background-color: $blue;
+    &:hover {
+      background-color: lighten($blue, 15%);
+    }
   }
   
   .error {
-    background-color: #e4757a;
+    background-color: $red;
+    &:hover {
+      background-color: lighten($red, 15%);
+    }
   }
   
   .info {
-    background-color: #927bc1;
+    background-color: $purple;
+    &:hover {
+      background-color: lighten($purple, 15%);
+    }
   }
   
   .success {
-    background-color: #63cc82;
+    background-color: $pear;
+    &:hover {
+      background-color: lighten($pear, 15%);
+    }
   }
   
   .warning {
-    background-color: #fd7856;
+    background-color: $orange;
+    &:hover {
+      background-color: lighten($orange, 15%);
+    }
   }
